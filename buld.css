@@ -1,0 +1,322 @@
+/* Шапка */
+.emade1 a{
+    text-decoration: none;
+    color: black;
+}
+.emade1{
+    display: flex;
+}
+.list nav{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    
+}
+header{
+    background-color: red;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+/* главная */
+.content{
+    display: flex;
+}
+aside{
+    background-color: rgb(102, 106, 109);
+    width: 100px; 
+    flex-grow: 0;
+    border-radius:5px ;
+    position: sticky;
+    top: 18px; 
+    height: calc(100vh - 50px); 
+    flex-shrink: 0; 
+}
+aside a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: padding;
+    transition-property: padding;
+    transition-duration: 0.6s;
+    transition-delay: 0.3s;
+}
+aside a:hover{
+    color: white;
+    transition: padding;
+    transition-property: padding;
+    transition-duration: 0.6s;
+    transition-delay: 0.3s;
+    padding: 5px;
+}
+.text1{
+    display: flex;
+    padding: 5px;
+    background-color: rgb(149, 154, 158);
+    border-radius: 10px;
+}
+main{
+    background-image: url(./img/stormbuld.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    width: 95em;
+    border-radius: 5px;
+    flex-grow: 1 ;
+    flex: 1;
+}
+.otstup{
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+/* сумари и диталиси */
+.sum1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.otstup summary{
+    font-weight: bold; 
+    cursor: pointer; 
+    padding: 10px; 
+    border: 1px solid #151515; 
+    margin-bottom: 5px; 
+    background-color: rgb(161, 161, 161);
+    margin-right: 1255px;
+    border-radius: 5px;
+}
+.otstup summary::marker{
+    color: rgb(215, 104, 0); 
+    font-size: 1.2em; 
+}
+.otstup summary:focus {
+    outline: none; 
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.664); 
+  }
+  /* Скрытие базовый маркеров в браузерах */
+summary {
+    list-style: none; 
+}
+
+summary::-webkit-details-marker { 
+    display: none; 
+} 
+summary::marker { 
+    display: none; 
+} 
+/* Обработка значка */
+.otstup summary::before {
+    content: "ᐳ"; /* Добавить свой символ (треугольник вправо) */
+    display: inline-block; /* Чтобы можно было задать ширину и высоту */
+    width: 1em; /* Задать ширину */
+    text-align: center; /* Центрировать символ */
+    color: green; /* Цвет символа */
+  }
+  
+.otstup details[open] summary::before { /* Изменить символ, когда <details> открыт */
+    content: "ᐯ"; /* Треугольник вниз */
+  }
+/* Главная/тексты */
+.maintext1{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: bold;
+    margin-left: 100px;
+}
+.maintext1 ins{
+    text-decoration: none;
+    margin-left: 20px;
+}
+/* главная/Скачивние ресурспака */
+.fail{
+    display: flex;
+    background-color: rgb(158, 141, 141);
+    margin-left: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-right: 1380px;
+    padding-top: 5px;
+    padding-block-end: 5px;
+    gap: 4px;
+}
+.fail img{
+    width: 17px;
+    height: 17px;
+}
+.fail a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+.fail a:hover{
+    color: aqua;
+    transition: color;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+}
+/* главная/Скачивние моды */
+.fail1{
+    display: flex;
+    background-color: rgb(158, 141, 141);
+    margin-left: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-right: 1400px;
+    padding-top: 5px;
+    padding-block-end: 5px;
+    gap: 4px;
+}
+.fail1 img{
+    width: 17px;
+    height: 17px;
+}
+.fail1 a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+.fail1 a:hover{
+    color: rgb(81, 46, 59);
+    transition: color;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+}
+.mode1{
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px ;
+    padding-left: 5px;
+    gap: 5px;
+    margin-right: 1130px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mode1 img{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    padding-left: 20px ;
+    padding-block-end: 10px ;
+}
+.mode2{
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px ;
+    padding-left: 5px;
+    gap: 5px;
+    margin-right: 1030px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-block-end: 5px;
+}
+.mode2 img{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    padding-left: 20px ;
+    padding-block-end: 10px ;
+}
+.mode3{
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px ;
+    padding-left: 5px;
+    gap: 5px;
+    margin-right: 1030px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-block-end: 10px;
+}
+.mode3 img{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    padding-left: 20px ;
+    padding-block-end: 10px ;
+}
+.mode4{
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px ;
+    padding-left: 5px;
+    gap: 5px;
+    margin-right: 1030px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-block-end: 10px;
+}
+.mode4 img{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    padding-left: 20px ;
+    padding-block-end: 10px ;
+}
+.modes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+.textstylemodes{
+    background-color: rgb(116, 125, 125);
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+/* футер */
+footer{
+    flex-shrink: 0;
+    background-color: blueviolet;
+}
+/* Тело */
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
+    animation-name: mainbody;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-delay: 0ms;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+@keyframes mainbody{
+    0%{
+        background-color: rgb(35, 35, 35);
+    }
+    25%{
+        background-color: rgb(68, 64, 64);
+    }
+    50%{
+        background-color: rgb(90, 84, 84); 
+    }
+    100%{
+        background-color: rgb(35, 35, 35);
+    }
+}
+/* Адаптация */
+@media (max-width: 768px) {
+    .content {
+      flex-direction: column; /* Размещаем элементы вертикально */
+    }
+  
+  }
+.copy{
+    font-size: 14px;
+    cursor: copy;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-10px);
+}
+

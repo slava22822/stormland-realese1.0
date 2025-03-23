@@ -1,0 +1,21 @@
+/* Шапка */
+.emade1 a{
+    text-decoration: none;
+    color: black;
+}
+.emade1{
+    display: flex;
+}
+.list nav{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    
+}
+header{
+    background-color: red;
+}
+/* футер */
+footer{
+    background-color: blueviolet;
+}
